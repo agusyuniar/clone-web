@@ -1,0 +1,81 @@
+body{
+    background-color: mintcream;
+    background: url(https://background-tiles.com/overview/white/patterns/large/1018.png);
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.box{
+    width: 300px;
+    padding: 40px;
+    border: 5px solid rgb(100, 124, 123);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 20px;
+    transition: 300ms;
+}
+.box:hover{
+    border: 6px solid rgb(15, 124, 120);
+    box-shadow: black 10px;
+    padding: 20px;
+}
+
+
+.box h1{
+    color: rgb(49, 14, 88);
+    text-transform: uppercase;
+    font-weight: 500;
+    text-align: center;
+}
+
+.box input[type ="text"], .box input[type="password"]{
+    border: 0;
+    background: none;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid rgb(161, 167, 168);
+    padding: 10px;
+    width: 200px;
+    color: rgb(68, 67, 67);
+    font-weight: bold;
+    font-size: medium;
+    border-radius: 10px;
+    transition: 300ms;
+}
+
+.box input[type ="text"]:hover, .box input[type="password"]:hover{
+    border: 2px solid rgb(81, 91, 93);
+    width: 210px;
+}
+
+.box input[type ="text"]::placeholder, .box input[type="password"]::placeholder{
+    color: rgb(135, 190, 137);
+}
+
+.box input[type ="text"]:focus, .box input[type="password"]:focus{
+    width: 210px;
+    outline: none;
+}
+
+
+.box input[type="button"]{
+    border-radius: 10px;
+    background: none;
+    display: block;
+    border-color: rgb(152, 149, 158);
+    text-align: center;
+    padding: 10px;
+    margin: 20px auto;
+    width: 100px;
+    transition: 300ms;
+    cursor: pointer;
+}
+
+.box input[type="button"]:hover{
+    background-color: rgb(242, 243, 243);
+    width: 120px;
+}
